@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color:powderblue;
+    color: white;
+    padding: 20px  0;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    margin: 0 15px;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+
+}
+h1, h2 {
+    margin: 0 0 10px 0;
+    color:white ;
+}
+p {
+    line-height: 1.6;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+body {
+    background-image: url('background2.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: white; 
+}
+
+footer {
+    background-color:powderblue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+#about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    background-image: url('background3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; 
+}
+#about:hover, #education:hover, #skills:hover {
+    transform: translateY(-10px);
+    border-color: #007bff;
+}
+
+#education, #skills {
+    background-image: url('background3.jpg');
+    background-color: gray; 
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color:#333
+}
+
+.skills-list li {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: translateY(-10px);
+    border-color: #007bff;
+}
+#contact {
+    background-image: url('background4.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: #fff; 
+    padding: 20px;
+    border-radius: 8px; 
+    text-align: center; 
+    margin: 20px auto; 
+    max-width: 600px; 
+}
+
+#contact form {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color:black
+}
+
+#contact label, #contact input, #contact textarea {
+    display: block;
+    margin: 5px 0;
+    width: 100%; 
+}
+
+#contact button {
+    background-color: #007bff;
+    color: #fff; 
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact button:hover {
+    background-color: darkorchid;
+}
+#portfolio {
+    padding: 100px 0;
+    color: #333;
+    text-align: center;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 20px;
+    max-width: 1200px;
+    padding: 0px;
+}
+
+.work-item {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-10px);
+}
+.work-info {
+    padding: 20px;
+}
+
+.work-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: palevioletred;
+}
+
+.work-info p {
+    font-size: 16px;
+    color: #555;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-left: 150px;
+}
